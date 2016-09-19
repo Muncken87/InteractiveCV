@@ -1,0 +1,36 @@
+---
+title: About
+permalink: /about/
+---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body class="closed">
+ {% include nav.html %}
+<div class="wrapper">
+  <div class="about-me">
+    <h1>Alexander Munck</h1>
+    <h2>About</h2>
+    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. </p>
+
+    <div class="half skills">
+      <h2>Skills</h2>
+        <p>Front-end </p>
+        <div class="span-block">
+        {% for item in site.data.settings.frontend %}
+        <span class="project-title">{{ item.skill }}</span>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="half colophon">
+      <h2>Colophon</h2>
+      <p>
+        Alexander Munck af Rosenschöld is a developer specializing minimalism, front-end architecture, and modular design systems, with an emphasis on heuristics, user-centered design, and collaborative design processes. Based in Sweden SE.
+    </div>
+
+  </div> <!-- end about me -->
+  <div class="clearfix"></div>
+</div>
+</body>
+</html>

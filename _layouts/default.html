@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body class="closed">
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      {% include sidebar.html %}
+      <div class="col-md-9">
+        {% include about.html %}
+        {% include portfolio.html %}
+        {% include contact.html %}
+      </div>
+    </div> <!-- end col 9 -->
+    </div> <!-- end row -->
+  </div> <!-- end container -->
+<!-- {% include nav.html %} -->
+<script>
+(function($) {
+  "use strict";
+
+$(document).ready(function(){
+	$('.wrapper').easytabs({
+	animate			: true,
+	updateHash		: false,
+	transitionIn	:'fadeIn',
+	transitionOut	:'fadeOut',
+	animationSpeed	:100,
+	tabActiveClass	:'active',
+	tabs            :' .sidebar-nav > ul > li ',
+	transitionInEasing: 'linear',
+  transitionOutEasing: 'linear'
+  });
+
+  $('.wrapper').bind('easytabs:after', function() {
+
+  });
+});
+})(jQuery);
+</script>
+</body>
+</html>

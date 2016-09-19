@@ -1,0 +1,28 @@
+.footer
+  padding: 5px 5px
+  margin: 50px 0px
+  clear: both
+  position: relative
+
+  .post-meta
+    color: #000
+    text-decoration: none
+
+  @media(max-width: 767px)
+    text-align: center
+
+  .copyright
+    @extend .post-meta
+    // margin: 0 !important
+    float: left
+
+    @media(max-width: 767px)
+      float: none
+      margin-bottom: 1em
+
+  .contact
+    @extend .post-meta
+    float: right
+
+    @media(max-width: 767px)
+      float: none

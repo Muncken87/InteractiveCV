@@ -1,0 +1,26 @@
+title: Spintail
+
+navigation:
+- {name: Contact, url: '/'}
+- {name: About, url: '../about'}
+- {name: Blog, url: '../blog'}
+
+frontend:
+- {skill: 'HTML5,' }
+- {skill: 'CSS3,'}
+- {skill: 'SASS,' }
+- {skill: 'jQuery,' }
+- {skill: 'Wordpress,'}
+- {skill: 'Jekyll' }
+
+clients:
+- {name: Arcos Dorados arteBA CEOP Latam Converse Fierro Hotel Henry Saiz Lan Airlines Let’s Produce Los Arbolitos Trust Petrobras Sony Argentina. }
+
+avatar:
+  - {url: 'img/avatar.jpg'  }
+
+
+work:
+- {name: Rails Blog, url: 'img/work/proj-1/rails-blog.jpg', web-url: 'https://polar-everglades-19619.herokuapp.com/', project-area: 'Ruby on Rails / Ruby'}
+- {name: Rails E-Commerce, url: 'img/work/proj-2/spintailz.jpg', web-url: 'https://spintailz.herokuapp.com/', project-area: 'Ruby on Rails / Ruby'}
+- {name: Fakebook, url: 'img/work/proj-3/fakebook.jpg', web-url: 'https://limitless-coast-15127.herokuapp.com/', project-area: 'Rails, Facebook Clone'}

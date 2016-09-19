@@ -1,0 +1,149 @@
+#about
+  background-color: white
+
+  .main-title
+    border-bottom: 1px solid #efefef
+    padding: 30px 10px 2px 40px
+    position: relative
+
+    h1
+      text-transform: uppercase
+      font-size: 15px
+      font-weight: bold
+
+  .content
+    padding: 40px
+
+    .block
+      margin-bottom: 30px
+      .profile
+        h1
+          font-weight: bold
+        h3
+          color: $text-color-light
+          font-weight: 300
+          font-size: 22px
+
+    .tags
+      li
+        margin-bottom: 2rem
+
+    .user-info
+      margin-top: 2rem
+
+      .info-list
+        text-align: center
+        border: 1px solid #efefef
+        padding: 0
+        list-style: none
+        font-weight: 300
+
+        li
+          border-bottom: 1px solid #efefef
+          background: #fafafa
+          font-size: 14px
+
+          &:last-of-type
+            border-bottom: 0
+
+          .inf
+            width: 35%
+            background: #ffffff
+            left: -1px
+            position: relative
+            border-right: 1px solid #efefef
+            color: #333333
+            display: inline-block
+            padding: 8px 0
+            font-weight: bold
+
+            @media only screen and (max-width: 767px) and (min-width: 480px)
+              left: -4px
+
+            @media only screen and (max-width: 1000px) and (min-width: 768px)
+              left: -5px
+
+          .value
+            width: 63%
+            color: #666666
+            display: inline-block
+            padding: 8px 0
+
+    // Timeline
+.timeline
+  position: relative
+  &:before
+    background: #ededed
+    background: -moz-linear-gradient(top, #ededed 1%, #ededed 75%, #ffffff 100%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ededed), color-stop(75%,#ededed), color-stop(100%,#ffffff))
+    background: -webkit-linear-gradient(top, #ededed 1%,#ededed 75%,#ffffff 100%)
+    background: -o-linear-gradient(top, #ededed 1%,#ededed 75%,#ffffff 100%)
+    background: -ms-linear-gradient(top, #ededed 1%,#ededed 75%,#ffffff 100%)
+    background: linear-gradient(to bottom, #ededed 1%,#ededed 75%,#ffffff 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 )
+    bottom: 0
+    content: ""
+    left: 18px
+    position: absolute
+    top: 0
+    width: 3px
+    height: 100%
+
+.education, .experience
+  &:after
+    font-family: 'Glyphicons Halflings'
+    background: #ffffff
+    border: 3px solid #efefef
+    top: 0
+    left: -5px
+    width: 50px
+    height: 50px
+    position: absolute
+    text-align: center
+    color: #333333
+    font-size: 20px
+    line-height: 45px
+    border-radius: 100%
+
+.experience
+  &:after
+    content: "\e139"
+
+.education
+  &:after
+    content: "\e233"
+
+.exp
+  padding-left: 50px
+  padding-top: 20px
+  position: relative
+  margin-bottom: 10px
+
+  &:after
+    background: #cd5353
+    border: 3px solid #ffffff
+    content: ""
+    height: 15px
+    left: 12px
+    position: absolute
+    text-align: center
+    top: 20px
+    width: 15px
+    border-radius: 100%
+
+  .hgroup
+    margin-bottom: 5px
+    h4
+      margin: 0
+      color: $background
+      font-size: 14px
+      font-weight: bold
+    h6
+      margin-bottom: 0
+
+    .current
+      color: #ffffff
+      background: #cd5353
+      border-radius: 6px
+      padding: 1px 12px
+      margin-left: 10px

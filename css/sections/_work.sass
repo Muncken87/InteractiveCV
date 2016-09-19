@@ -1,0 +1,45 @@
+.work-image
+  background-size: cover
+  background-position: 50% 50%
+  position: relative
+  cursor: pointer
+  overflow: hidden
+  -webkit-filter: grayscale(1)
+  transition: 0.3s ease-in-out
+  min-height: 250px
+  display: block
+  margin-bottom: 30px
+
+  .thumb-overlay
+    position: absolute
+    display: block
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: rgba(255,255,255,1)
+    overflow: hidden
+    transition: 0.3s ease-in-out
+    opacity: 0
+
+    &:hover
+      opacity: 1
+
+    .project-data
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      display: block
+      transition: 0.3s ease-in-out
+      text-align: center
+      width: 100%
+
+      .project-title
+        color: $black-bg
+        margin-bottom: 0.75rem
+        font-size: 22px
+
+      .project-area
+        color: $black-bg
+      font-size: 14px

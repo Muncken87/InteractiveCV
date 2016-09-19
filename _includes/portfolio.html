@@ -1,0 +1,23 @@
+<section id="portfolio">
+  <div class="main-title">
+    <!-- Start Portfolio -->
+    <h1>My Work</h1>
+    <p>Heroku sites might take alittle while to load, due to using the free heroku site system</p>
+  </div>
+    <div class="content">
+      <div class="row">
+        {% for item in site.data.settings.work %}
+          <div class="col-lg-6 col-md-6 col-xs-12">
+          <a target="_blank" href="{{ item.web-url }}" class="work-image"style="background-image:url({{ item.url }});">
+          <div class="thumb-overlay">
+            <div class="project-data">
+              <h2 class="project-title">{{ item.name }}</h2>
+            <p class="project-area">{{ item.project-area }}</p>
+            </div>
+          </div>
+          </a>
+          </div>
+        {% endfor %}
+      </div>
+  </div>
+</section>

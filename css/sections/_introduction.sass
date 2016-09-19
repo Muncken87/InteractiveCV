@@ -1,0 +1,118 @@
+.wrapper
+  margin: 80px 0px
+
+  .bottom-header
+    padding: 20px
+    text-align: center
+    background: #fff
+    display: block
+
+    @media only screen and (max-width: 1000px) and (min-width: 768px)
+      margin-bottom: 10px
+
+    @media only screen and (max-width: 767px) and (min-width: 480px)
+      margin-bottom: 10px
+
+    @media only screen and (max-width: 479px)
+      margin-bottom: 10px
+
+    .social
+      list-style: none
+      padding: 0
+      margin: 0
+
+      li
+        display: inline-block
+        margin-right: 2px
+        text-align: center
+        a
+          border: 2px solid #33373d
+          color: #33373d
+          display: inline-block
+          height: 35px
+          width: 35px
+          border-radius: 100%
+          transition: all 0.3s ease-in-out 0s
+
+          &:hover
+            border: 2px solid #cd5353
+            color: #cd5353
+
+          i
+            line-height: 32px
+            font-size: 12px
+
+  .sidebar-header
+    img
+      height: auto
+      width: 100%
+      max-width: 100%
+      display: block
+
+  .sidebar-nav
+    ul
+      padding: 0
+      list-style: none
+      margin: 0
+
+      &:after
+        clear: both
+        content: ''
+        display: table
+      li
+        position: relative
+        border-bottom: 1px solid #26292e
+        &:last-of-type
+          border-bottom: none
+
+        @media only screen and (max-width: 1000px)
+          float: left
+          width: 33.3333%
+          border-right: 1px solid #26292e
+          border-bottom: none
+
+        @media only screen and (max-width: 767px)
+          float: left
+          width: 33.3333%
+          border-right: 1px solid #26292e
+          border-bottom: none
+
+
+        a
+          display: block
+          text-align: right
+          background: #33373d
+          color: #85878b
+          font-size: 12px
+          padding: 15px 25px
+          width: 100%
+          font-weight: bold
+          text-decoration: none
+          line-height: 22px
+          transition: all 0.3s ease-in
+
+          @media only screen and (max-width: 767px) and (min-width: 480px)
+            font-size: 0
+
+          @media only screen and (max-width: 479px)
+            font-size: 0
+
+          &:hover
+            background-color: #cd5353
+            color: white
+
+          i
+            position: absolute
+            left: 20px
+            font-size: 22px
+            line-height: 48px
+
+            @media only screen and (max-width: 767px) and (min-width: 480px)
+              left: 0
+              width: 100%
+              text-align: center
+
+            @media only screen and (max-width: 479px)
+              left: 0
+              width: 100%
+              text-align: center
