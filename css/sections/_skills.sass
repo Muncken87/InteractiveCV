@@ -1,0 +1,98 @@
+.skill
+  .vc
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flexbox
+    display: flex
+    align-items: center
+    -webkit-align-items: center
+    justify-content: center
+    -webkit-justify-content: center
+    flex-direction: row
+    -webkit-flex-direction: row
+
+    @media only screen and (max-width: 1000px) and (min-width: 768px)
+      display: inline
+
+    @media only screen and (max-width: 767px) and (min-width: 480px)
+      display: inline
+
+    .title
+      -webkit-transform: rotate(90deg)
+      transform: rotate(90deg)
+      -ms-transform: rotate(90deg)
+      left: -15px
+      padding: 5px 25px
+      position: absolute
+      text-align: center
+      text-transform: uppercase
+      top: 0
+
+      @media only screen and (max-width: 1000px) and (min-width: 768px)
+        transform: rotate(0deg)
+        -webkit-transform: rotate(0)
+        position: static
+        margin-top: 25px
+
+      @media only screen and (max-width: 767px) and (min-width: 480px)
+        transform: rotate(0deg)
+        -webkit-transform: rotate(0)
+        position: static
+        margin-top: 25px
+
+
+    .des
+      border: 1px dashed #efefef
+
+    .cod
+      border: 1px dashed #cd5353
+
+    .skills-list
+      list-style: none
+      padding: 0
+      margin: 0
+
+      h4
+        display: block
+        text-transform: uppercase
+        margin-bottom: 0
+        font-size: 13px
+        color: #666666
+
+.des,.cod
+  .progress
+    display: block
+    height: 16px
+    margin: 8px 0 14px
+    position: relative
+    width: 100%
+    overflow: visible
+    border-radius: 50px
+    -moz-border-radius: 50px
+    -webkit-border-radius: 50px
+    -ms-border-radius: 50px
+    -o-border-radius: 50px
+    background: #ffffff
+    box-shadow: none
+
+    .percentage
+      border-radius: 50px 0 0 50px
+      -moz-border-radius: 50px 0 0 50px
+      -webkit-border-radius: 50px 0 0 50px
+      -ms-border-radius: 50px 0 0 50px
+      -o-border-radius: 50px 0 0 50px
+      bottom: 0
+      position: absolute
+      top: 0
+
+.des
+  .progress
+    border: 1px solid #efefef
+    .percentage
+      background-color: #efefef
+
+.cod
+  .progress
+    border: 1px solid #cd5353
+    .percentage
+      background-color: #cd5353
